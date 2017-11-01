@@ -1,0 +1,6 @@
+In Example_3.cpp, encapsulation is shown in multiple ways. First and foremost, only the intended user can manipulate the flagpole via password check. On top of this, the flagpole object can only be manipulated in the ways that I intended. The flag can be put on (if it hasn't already been placed), taken off (if it hasn't already been taken off), raised (if it is both on and lowered), or lowered (if it is both on and raised). Finally, variables in the FlagPole class are private so that no other object can access them.
+
+nonExample_3.cpp shows a failure of encapsulation, first and foremost with all public variables in the flapole class, allowing outside forces to change them. In addition, there is no password check, so this is accessible by all users. Finally, there are no checks in the code, so the user can 'raise' a flag multiple times, or take it off multiple times (regardless of if it is already off), etc, so the user can use this object in a way the developer did not intend.
+
+makefile for good example: Princ3ExMake.mk
+for bad example: Princ3NEMake.mk
